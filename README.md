@@ -3,3 +3,8 @@ Going back and forth from the time to the frequency domain is an everyday task i
 
 # Useful links 
 MelGan in Pytorch: https://github.com/jaywalnut310/MelGAN-Pytorch/blob/9eb3598e93ac0c5bb80e0b2bb25839b2fa8e19ea/preprocessing.py#L10
+
+| Methods     | Input  |    | Output | Link |
+| ----------- | ----------- |------- | ---- |
+| Griffin-Lim | Arbitrary spectrogram | waveform | https://librosa.org/doc/main/generated/librosa.griffinlim.html
+| MelGAN   | Spectrogram   | Waveform | https://github.com/jaywalnut310/MelGAN-Pytorch/blob/9eb3598e93ac0c5bb80e0b2bb25839b2fa8e19ea/preprocessing.py#L10
