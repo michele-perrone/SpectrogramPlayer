@@ -9,3 +9,4 @@ Going back and forth from the time to the frequency domain is an everyday task i
 
 # Useful links:
 https://github.com/KnurpsBram/AutoVC_WavenetVocoder_GriffinLim_experiments
+https://github.com/auspicious3000/autovc
