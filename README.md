@@ -4,7 +4,7 @@ Going back and forth from the time to the frequency domain is an everyday task i
 # Review of the methods:
 | Methods     | Input      | Output | Link |
 | ----------- | ----------- |------- | ---- |
-| Griffin-Lim | Arbitrary spectrogram | waveform | https://librosa.org/doc/main/generated/librosa.griffinlim.html
+| Griffin-Lim | Linear spectrogram | waveform | https://librosa.org/doc/main/generated/librosa.griffinlim.html
 | MelGAN   | Spectrogram   | Waveform | https://github.com/descriptinc/melgan-neurips
 | WaveNet  | Mel-spectrogram | Waveform | https://github.com/auspicious3000/autovc/blob/master/vocoder.ipynb
 
