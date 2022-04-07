@@ -6,3 +6,6 @@ Going back and forth from the time to the frequency domain is an everyday task i
 | ----------- | ----------- |------- | ---- |
 | Griffin-Lim | Arbitrary spectrogram | waveform | https://librosa.org/doc/main/generated/librosa.griffinlim.html
 | MelGAN   | Spectrogram   | Waveform | https://github.com/descriptinc/melgan-neurips
+
+# Useful links:
+https://github.com/KnurpsBram/AutoVC_WavenetVocoder_GriffinLim_experiments
