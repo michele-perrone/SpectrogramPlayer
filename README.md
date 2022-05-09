@@ -13,10 +13,6 @@ Going back and forth from the time to the frequency domain is an everyday task i
 | Deep Griffin-Lim | Mel-spectrogram | Waveform | https://github.com/Sytronik/deep-griffinlim-iteration | 
 
 # Useful links:
-https://github.com/KnurpsBram/AutoVC_WavenetVocoder_GriffinLim_experiments
-
-https://github.com/auspicious3000/autovc
-
 https://github.com/mindslab-ai/univnet
 
 https://github.com/Sytronik/deep-griffinlim-iteration
