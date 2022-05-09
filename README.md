@@ -5,11 +5,12 @@ Going back and forth from the time to the frequency domain is an everyday task i
 | Methods     | Input      | Output | Link | Parameters
 | ----------- | ----------- |------- | ---- | ---- |
 | Griffin-Lim | Linear spectrogram | waveform | https://librosa.org/doc/main/generated/librosa.griffinlim.html |
-| MelGAN   | Spectrogram   | Waveform | https://github.com/descriptinc/melgan-neurips | https://github.com/descriptinc/melgan-neurips/blob/6488045bfba1975602288de07a58570c7b4d66ea/mel2wav/modules.py#L26
-| WaveNet  | Mel-spectrogram | Waveform | https://github.com/auspicious3000/autovc/blob/master/vocoder.ipynb |
+| MelGAN   | Mel-Spectrogram   | Waveform | https://github.com/descriptinc/melgan-neurips | https://github.com/descriptinc/melgan-neurips/blob/6488045bfba1975602288de07a58570c7b4d66ea/mel2wav/modules.py#L26
 | HiFiGan  | Mel-spectrogram | Waveform | https://github.com/NVIDIA/NeMo/blob/75c166864541f8b90d525868512f0e4d8dac15da/nemo/collections/tts/models/hifigan.py | 
 | SqueezeWave | Mel-spectrogram | Waveform | https://github.com/NVIDIA/NeMo/blob/75c166864541f8b90d525868512f0e4d8dac15da/nemo/collections/tts/models/squeezewave.py |
 | UniGlow | Mel-spectrogram | Waveform | https://github.com/NVIDIA/NeMo/blob/75c166864541f8b90d525868512f0e4d8dac15da/nemo/collections/tts/models/uniglow.py |
+| UnivNet | Mel-spectrogram | Waveform| https://github.com/mindslab-ai/univnet | 
+| Deep Griffin-Lim | Mel-spectrogram | Waveform | https://github.com/Sytronik/deep-griffinlim-iteration | 
 
 # Useful links:
 https://github.com/KnurpsBram/AutoVC_WavenetVocoder_GriffinLim_experiments
