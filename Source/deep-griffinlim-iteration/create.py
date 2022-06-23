@@ -96,17 +96,19 @@ if __name__ == "__main__":
                          )
 
     else:
+        path_feature_split = str(path_feature).split(os.path.sep)
+        path_feature_split[-1] = ''
+        path_feature = os.path.sep.join(path_feature_split)
+
         # load test files:
         path_speech = './data/dgl_test_files/signals_speech.npy'
-        path_music = './data/dgl_test_files/signals_music.npy'
         signals_speech = np.load(path_speech, allow_pickle=True)
-        signals_music = np.load(path_music, allow_pickle=True)
+        loop_speech = tqdm(enumerate(signals_speech), total=len(signals_speech))
 
         path_feature_speech = Path(os.path.join(path_feature, 'speech'))
         os.makedirs(path_feature_speech, exist_ok=True)
 
-        loop_speech = tqdm(enumerate(signals_speech), total=len(signals_speech))
-
+        print('Processing [speech]:')
         for i_speech, file in loop_speech:
             # path_speech = os.path.join(path_speech_folder, path_speech)
             i_speech, list_snr_db, list_dict = save_feature(i_speech, str(path_speech), file)
@@ -115,14 +117,33 @@ if __name__ == "__main__":
                          **dict_result,
                          )
 
+        path_music = './data/dgl_test_files/signals_music.npy'
+        signals_music = np.load(path_music, allow_pickle=True)
         loop_music = tqdm(enumerate(signals_music), total=len(signals_music))
 
         path_feature_music = Path(os.path.join(path_feature, 'music'))
         os.makedirs(path_feature_music, exist_ok=True)
 
+        print('Processing [music]:')
         for i_music, file in loop_music:
             i_music, list_snr_db, list_dict = save_feature(i_music, path_music, file)
             for snr_db, dict_result in zip(list_snr_db, list_dict):
                 np.savez(path_feature_music / hp.form_feature_test.format(i_music),
+                         **dict_result,
+                         )
+
+
+        path_urban = './data/dgl_test_files/signals_urban.npy'
+        signals_urban = np.load(path_urban, allow_pickle=True)
+        loop_urban = tqdm(enumerate(signals_urban), total=len(signals_urban))
+
+        path_feature_urban = Path(os.path.join(path_feature, 'urban'))
+        os.makedirs(path_feature_urban, exist_ok=True)
+
+        print('Processing [urban]:')
+        for i_urban, file in loop_urban:
+            i_urban, list_snr_db, list_dict = save_feature(i_urban, path_urban, file)
+            for snr_db, dict_result in zip(list_snr_db, list_dict):
+                np.savez(path_feature_urban / hp.form_feature_test.format(i_urban),
                          **dict_result,
                          )

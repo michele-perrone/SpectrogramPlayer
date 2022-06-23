@@ -74,7 +74,7 @@ class CustomWriter(SummaryWriter):
 
             os.makedirs(save_path, exist_ok=True)
 
-            sf.write(os.path.join(save_path, hp.form_result_wav.format(step)), out_wav, samplerate=16000)
+            sf.write(os.path.join(save_path, hp.form_result_wav.format(step)), out_wav, samplerate=22050)
 
         # dict_eval = calc_using_eval_module(
         #     y_wav,

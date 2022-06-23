@@ -67,12 +67,12 @@ class _HyperParameters:
     # logdir will be converted to type Path in the init_dependent_vars function
     path_speech: Path = Path('/nas/public/dataset/lj_speech')
     path_music: Path = Path('./data/GTZAN')
-    path_test: Path = Path('./data/dgl_test_files/music')
     path_colab: Path = Path(f'./colab/repeat_{repeat_test}')
     path_feature: Path = Path('./data')
-    training_type: str = 'biased' # 'biased' or 'unbiased'
+    training_type: str = 'unbiased' # 'biased' or 'unbiased'
     logdir: str = f'./result/{training_type}' # 'biased' or 'unbiased'
-    test_set: str = 'music' # 'music' or 'speech'
+    test_set: str = 'urban' # 'music' or 'speech'
+    path_test: Path = Path(f'./data/dgl_test_files/{test_set}')
     # path_feature: Path = Path('./backup')
     sfx_featuredir: str = ''
 
@@ -145,7 +145,7 @@ class _HyperParameters:
             speech_test=self.path_test,
 
             feature_train=self.path_feature / 'TRAIN',
-            feature_test=self.path_feature / 'TEST' / self.test_set,
+            feature_test=self.path_feature / 'TEST' / 'urban',
 
             # normconst_train=path_feature_train / 'normconst.npz',
 
