@@ -4,5 +4,5 @@ Going back and forth from the time to the frequency domain is an everyday task i
 ## [Documentation](https://github.com/michele-perrone/SpectrogramPlayer/wiki)
 Please refer to this Wiki as the official guide of the project.
 
-## Final report
+## Final report
 [Here]() you can read the final article-like report of this project.
