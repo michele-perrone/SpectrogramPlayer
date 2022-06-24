@@ -1,4 +1,7 @@
 venv/
+Datasets/
+ProgressReports/
+Results/
 
 
 # Byte-compiled / optimized / DLL files
