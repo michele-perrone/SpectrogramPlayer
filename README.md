@@ -5,7 +5,7 @@ Going back and forth from the time to the frequency domain is an everyday task i
 Please refer to this Wiki as the official guide of the project.
 
 ## Final report
-[Here]() you can read the final report of this project.
+[Here](https://github.com/michele-perrone/SpectrogramPlayer/blob/main/L13_Report.pdf) you can read the final report of this project.
 
 ## Project DEMO web page
 [Here](http://micheleperrone.it/spectrogramplayer/) you can listen to the results and the different algorithms used and take a look to additional images of the comparison.
