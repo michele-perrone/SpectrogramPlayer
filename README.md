@@ -7,5 +7,5 @@ Please refer to this Wiki as the official guide of the project.
 ## Final report
 [Here]() you can read the final report of this project.
 
-## Project web page
+## Project DEMO web page
 [Here](http://micheleperrone.it/spectrogramplayer/) you can listen to the results and the different algorithms used and take a look to additional images of the comparison.
