@@ -13,16 +13,20 @@
 </head>
    
 <body>
-   <h1 class='h1 text-center m-5'>Spectrogram Player</h1>
-   <p class='p text-center'>This web page accompanies the mini-paper 'Comparing Signal Estimation Techniques from Magnitude-Only Spectrograms'.</p>
-   <p class='p text-center'>Here, you can listen to the audio excerpts reconstructed by the various techniques and see all the results computed by the metrics.</p>
+   <div class="container">
 
-   <div class="d-grid gap-2 d-md-block text-center m-5">
-      <button class="btn btn-lg btn-primary" id="audioButton" type="button">Listen to the samples</button>
-      <button class="btn btn-lg btn-primary" id="plotsButton" type="button">Show metric results</button>
-   </div>
+      <h1 class='h1 text-center m-5'>Spectrogram Player</h1>
+      <p class='p text-center'>This web page accompanies the mini-paper 'Comparing Signal Estimation Techniques from Magnitude-Only Spectrograms'.</p>
+      <p class='p text-center'>Here, you can listen to the audio excerpts reconstructed by the various techniques and see all the results computed by the metrics.</p>
 
-   <div id="results">
+      <div class="d-grid gap-2 d-md-block text-center m-5">
+         <button class="btn btn-lg btn-primary" id="audioButton" type="button">Listen to the samples</button>
+         <button class="btn btn-lg btn-primary" id="plotsButton" type="button">Show metric results</button>
+      </div>
+
+      <div id="results">
+      </div>
+
    </div>
 
    <!-- Script that generates the tables -->
