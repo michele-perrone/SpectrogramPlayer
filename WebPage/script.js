@@ -69,8 +69,8 @@ function generate_audio_table()
             table += "<audio id='" + curr_player_id + "'> <source src='" + current_audio + "' type='audio/mpeg'> </audio>";
 
             table += "<div class='d-grid gap-2 d-md-block font-monospace'>";
-            table += "<button class='btn btn-sm btn-success p-1 m-1'   type='button'  onclick='document.getElementById(" + curr_player_id + ").play()'>Play</button>";
-            table += "<button class='btn btn-sm btn-secondary p-1 m-1' type='button'  onclick='document.getElementById(" + curr_player_id + ").pause()'>Stop</button>";
+            table += "<button class='btn btn-sm btn-success p-1 m-1'   type='button'  onclick='document.getElementById(" + curr_player_id + ").play()'><img src='icons/play-button.svg' width='20'/></button>";
+            table += "<button class='btn btn-sm btn-secondary p-1 m-1' type='button'  onclick='document.getElementById(" + curr_player_id + ").pause()'><img src='icons/pause-button.svg' width='20'/></button>";
             table += "</div>";
 
             table += "</td>";
